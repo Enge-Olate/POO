@@ -5,6 +5,8 @@
 
 package com.mycompany.orientacaoobjeto;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author marci
@@ -12,10 +14,8 @@ package com.mycompany.orientacaoobjeto;
 public class OrientacaoObjeto {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        
         primeiroNome Nome = new primeiroNome();
         Nome.setName("Márcio");
-        System.out.println(Nome.getName());
+        JOptionPane.showMessageDialog(null,"Meu nome é :" + Nome.getName());
     }
 }
